@@ -19,5 +19,12 @@ export const Header = () => {
   </div>
   </header>`
 
+  const navButton = headerElm.querySelector('.nav-btn')
+  navButton.addEventListener('click', () => {
+    const rolloutNav = headerElm.querySelector('.rollout-nav')
+    rolloutNav.classList.toggle('nav-closed')
+  })
+
+
   return headerElm
 }
